@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>Calculator</title>
+<title>เครื่องคิดเลขปั่นๆ</title>
 <style>
   body { display: flex; justify-content: center; align-items: center; height: 100vh; background:#f0f0f0; }
   .calculator { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #aaa; }
@@ -50,15 +50,9 @@ function clearDisplay() {
 }
 
 function calculate() {
-  try {
-    // eval จะคำนวณ string expression เช่น "1+2*3"
-    const result = eval(expression);
-    document.getElementById('display').value = result;
-    expression = result.toString();
-  } catch (err) {
-    document.getElementById('display').value = "Error!";
-    expression = "";
-  }
+  // ปั่น ๆ ตรงนี้ ให้ขึ้นข้อความขำ ๆ
+  document.getElementById('display').value = "ไม่รู้ว่ะ";
+  expression = "";
 }
 </script>
 
